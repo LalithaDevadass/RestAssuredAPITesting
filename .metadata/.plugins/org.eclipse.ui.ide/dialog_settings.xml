@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="0"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+		<section name="BasicNewProjectResourceWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="603"/>
+			<item key="DIALOG_Y_ORIGIN" value="225"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item key="OUTSIDE_LOCATION" value="/Users/rameshnair/Automation/DemoMavenProject_BDD-main"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/rameshnair/Automation/DemoMavenProject_BDD-main"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+		<section name="ExternalProjectImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="398"/>
+			<item key="DIALOG_Y_ORIGIN" value="95"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="703"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+</section>

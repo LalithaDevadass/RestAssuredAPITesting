@@ -1,0 +1,30 @@
+package api.auto.restassured;
+
+import java.util.List;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetBooking 
+{
+	@Test
+	public void getBookingTest()
+	{
+		//display all booking details
+		Response res = RestAssured.get("https://restful-booker.herokuapp.com/booking/1");
+		res.print();
+		
+		//verify response code 200
+		Assert.assertEquals(res.statusCode(), 200, "Status code should be 200");
+		
+		//verify all booking details
+		//SoftAssert softassert = new SoftAssert();
+		
+		//String actualfirstname = res.jsonPath().getString("firstname");
+		//softassert.assertEquals(actualfirstname, false)
+	}
+}

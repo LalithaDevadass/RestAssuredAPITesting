@@ -1,0 +1,5 @@
+package api.auto.restassured;
+
+public class HealthCheckURL {
+
+}

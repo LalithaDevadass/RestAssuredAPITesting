@@ -1,0 +1,27 @@
+package api.auto.restassured;
+
+import java.util.List;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetBooking 
+{
+	@Test
+	public void getBookingIdsTest()
+	{
+		//display all booking ids
+		Response res = RestAssured.get("https://restful-booker.herokuapp.com/booking");
+		res.print();
+		
+		//verify response code 200
+		Assert.assertEquals(res.statusCode(), 200, "Status code should be 200");
+		
+		//verify the bookingids are not empty
+		List<Integer> bookingIds = res.jsonPath().getList("bookingid");
+		Assert.assertFalse(bookingIds.isEmpty(), "List of Booking Ids are empty");
+	}
+}

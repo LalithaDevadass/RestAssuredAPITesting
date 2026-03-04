@@ -1,0 +1,12 @@
+package api.auto.restassured;
+
+import org.testng.annotations.Test;
+
+public class HealthCheckURL 
+{
+	@Test
+	public void urlhealthcheck()
+	{
+		System.out.println("This is TestNG");
+	}
+}

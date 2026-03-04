@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="cucumber.eclipse.java.launching.localCucumberFeature">
+    <stringAttribute key="cucumber feature" value="features/login.feature"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/mavendemoproject"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="mavendemoproject"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcucumber.publish.quiet=true"/>
+    <stringAttribute key="org.eclipse.unittest.ui.TEST_VIEW_SUPPPORT" value="io.cucumber.eclipse.editor.testresults"/>
+</launchConfiguration>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.CellType"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.DateUtil"/>
+    <fullyQualifiedTypeName name="org.testng.asserts.SoftAssert"/>
+    <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="org.apache.poi.ddf.EscherColorRef.SysIndexSource"/>
+    <fullyQualifiedTypeName name="jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+    <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
+    <fullyQualifiedTypeName name="org.abc.auto.sd.utilities.ReadProperties"/>
+    <fullyQualifiedTypeName name="org.abc.auto.sd.datagenerators.TestDataGenerator"/>
+    <fullyQualifiedTypeName name="org.abc.auto.sd.datagenerators.SauceDemoDataGenerator"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
+    <fullyQualifiedTypeName name="io.restassured.builder.RequestSpecBuilder"/>
+    <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
+    <fullyQualifiedTypeName name="io.restassured.http.Cookie.Builder"/>
+    <fullyQualifiedTypeName name="api.auto.restassured.Booking"/>
+    <fullyQualifiedTypeName name="api.auto.restassured.Bookingdates"/>
+</qualifiedTypeNameHistroy>

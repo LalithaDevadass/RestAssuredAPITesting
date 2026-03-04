@@ -1,0 +1,83 @@
+package org.abc.auto.sd.testcases;
+
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import org.abc.auto.sd.baseclass.InitiateBrowser;
+import org.abc.auto.sd.pages.CartPage;
+import org.abc.auto.sd.pages.ProductPage;
+import org.abc.auto.sd.pages.SauceDemoLoginPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+
+public class SauceDemoCartPageScenario extends InitiateBrowser
+{
+	
+	ProductPage productpage;
+	CartPage cartpage;
+	
+	@Test(priority=1)
+	public void setup() throws Exception
+	{
+		SauceDemoLoginPage signup = new SauceDemoLoginPage(Driver);	
+		//wait until the login name page loads
+		WebDriverWait wait = new WebDriverWait(Driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("user-name")));
+		signup.enter_username("standard_user");		
+		signup.enter_password("secret_sauce");		
+		signup.click_loginbtn();
+		
+		productpage = new ProductPage(Driver);
+		cartpage = new CartPage(Driver);	
+	}
+		
+	@Test(priority=2)
+	public void tc01_validate_saucedemo_cartpage_checking() throws Exception
+	{
+				
+				
+				// Step 1: Add product from product page
+				productpage.addToCart("sauce-labs-backpack");
+
+		        // Step 2: Navigate to cart page
+				productpage.clickCartIcon();
+				
+				//to get page title
+				String actpagetitle = Driver.findElement(By.className("title")).getText();
+				System.out.println(actpagetitle);
+				
+				// Step 3: Validate product is in cart
+		        Assert.assertTrue(cartpage.isProductInCart("Sauce Labs Backpack"),"Product not found in the cart!");
+		
+		
+		/*
+		//wait until the cart page loads
+        WebDriverWait wait = new WebDriverWait(Driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("cart_item")));
+        
+		WebElement currentcartItem = Driver.findElement(By.className("shopping_cart_link"));
+    	String cartCount = currentcartItem.getText();
+    	System.out.println("Cart item count: " + cartCount);   */
+    	
+    	
+       
+		
+	}	
+}	
+	
+	
+	
+

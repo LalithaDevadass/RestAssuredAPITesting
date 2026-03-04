@@ -1,0 +1,46 @@
+package api.auto.restassured;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetBooking 
+{
+	@Test
+	public void getBookingTest()
+	{
+		//display all booking details
+		Response res = RestAssured.get("https://restful-booker.herokuapp.com/booking/1");
+		res.print();
+		
+		//verify response code 200
+		Assert.assertEquals(res.statusCode(), 200, "Status code should be 200");
+		
+		
+		//verify all booking details
+		SoftAssert softassert = new SoftAssert();
+		
+		String actualfirstname = res.jsonPath().getString("firstname");
+		softassert.assertEquals(actualfirstname, "Eric", "Firstname in response is not expected");
+		
+		String actuallastname = res.jsonPath().getString("lastname");
+		softassert.assertEquals(actuallastname, "Jackson", "Lastname in response is not expected");
+		
+		int price = res.jsonPath().getInt("totalprice");
+		softassert.assertEquals(price, 177, "Price in response is not expected");
+		
+		boolean depositpaid = res.jsonPath().getBoolean("depositpaid");
+		softassert.assertTrue(depositpaid, "Deposit paid should be true");
+		
+		String actualcheckin = res.jsonPath().getString("bookingdates.checkin");
+		softassert.assertEquals(actualcheckin, "2025-10-05", "checkin in response is not expected");
+		
+		String actualcheckout = res.jsonPath().getString("bookingdates.checkout");
+		softassert.assertEquals(actualcheckout, "2025-10-31", "checkout in response is not expected");
+		
+		
+	}
+}
