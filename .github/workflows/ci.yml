@@ -46,7 +46,7 @@ jobs:
       # 6. Upload test reports (optional)
       - name: Upload Test Reports
         if: always()  # even if tests fail
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: RestAssuredAPITesting/target/surefire-reports/
